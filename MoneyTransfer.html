@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-2">
+                <!-- current Account -->
+                 <div>
+                    <div class="stats shadow">
+                        <div class="stat">
+                          <div id="currentBalance" class="stat-value">1000</div>
+                          <div class="stat-desc">Current Accout Balance</div>
+                        </div>
+                      </div>
+                 </div>
+                 <div class="divider"></div>
+                 <!-- Action Button -->
+                 <div>
+                    <button id="show-ADDMONEY" class="btn btn-neutral">Add Money</button>
+                    <button id="show-CASHOUT" class="btn btn-primary">Cash Out</button>
+                    <button id="show-TRANSACTION" class="btn btn-secondary">Transaction</button>
+                 </div>
+                 <div class="divider"></div>
+                 <!-- Add Money start -->
+                 <div id="addMoneySecton" class="card  bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Money</span>
+                        </label>
+                        <input id="input-addMoney" type="text" placeholder="Add Money" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input id="input-addPass" type="password" placeholder="password" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="addMoney-btn" class="btn btn-neutral">Add Money</button>
+                      </div>
+                    </form>
+                  </div>
+                  <!-- Add Money end -->
+                   <!-- Cash Out start -->
+                   <div id="cashOutSection" class="card hidden bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cash Out</span>
+                        </label>
+                        <input id="input-cahOut" type="text" placeholder="Type Money" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Password</span>
+                        </label>
+                        <input id="input-outPass" type="password" placeholder="password" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="CashOut-btn" class="btn btn-primary">Cash OUT</button>
+                      </div>
+                    </form>
+                  </div>
+                    <!-- Cash Out end -->
+                     <!-- Transaction start -->
+                      <div id="TransactionSection" class="hidden">
+                        <h1 class="text-center">Transection History </h1>
+                        <div id="transsecton-history" class="space-y-2">
+
+                        </div>
+                      </div>
+                      <!-- Transaction end -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/CashOut.js"></script>
+    <script src="./js/feature.js"></script>
+</body>
+</html>

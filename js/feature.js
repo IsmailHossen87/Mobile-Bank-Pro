@@ -1,0 +1,12 @@
+document.getElementById('show-ADDMONEY').
+    addEventListener('click',function(){
+    ShowSectionId('addMoneySecton')
+})
+document.getElementById('show-CASHOUT').
+    addEventListener('click',function(){
+    ShowSectionId('cashOutSection')
+})
+document.getElementById('show-TRANSACTION').
+    addEventListener('click',function(){
+    ShowSectionId('TransactionSection')
+})
